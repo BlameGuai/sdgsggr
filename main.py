@@ -185,9 +185,9 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
             birthday_data = "距离{}的生日还有{}天".format(value["name"], birth_day)
         # 将生日数据插入data
         if w == 1:
-         data["data"][key] = {"value": birthday_data ,"color": "#DDA0DD" }
+         data["data"][key] = {"value": birthday_data ,"color": "#87CEFA" }
         else:
-         data["data"][key] = {"value": birthday_data  }
+         data["data"][key] = {"value": birthday_data ,"color": "#FFC0CB" }
         w=1
     headers = {
         'Content-Type': 'application/json',
