@@ -187,7 +187,7 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
         if w == 1:
          data["data"][key] = {"value": birthday_data ,"color": "#DDA0DD" }
         else:
-         data["data"][key] = {"value": birthday_data ,"color": "#00DD00" }
+         data["data"][key] = {"value": birthday_data  }
         w=1
     headers = {
         'Content-Type': 'application/json',
